@@ -28,7 +28,7 @@ permalink: /
                             <a class="btn btn-sm set_en"><img src="{{"static/img/flags/United-States.png"| prepend: site.baseurl }}" height="16px" width="16px"></a>
                         </li>
                         <li>
-                            <a class="btn btn-sm set_cn"><img src="{{"static/img/flags/China.png"| prepend: site.baseurl }}" height="16px" width="16px"></a>
+                            <a class="btn btn-sm set_pt"><img src="{{"static/img/flags/Brazil.png"| prepend: site.baseurl }}" height="16px" width="16px"></a>
                         </li>
 
                     </ul>
@@ -510,7 +510,7 @@ permalink: /
             lng: 'en'
         }, function (t){
             $('.i18container').i18n();
-            // $('#i18_title').i18n();
+            $('#i18_title').i18n();
             $('#i18_navbar').i18n();
             $('#i18_about_me').i18n();
             $('#i18_skills').i18n();
@@ -522,7 +522,7 @@ permalink: /
         $('.set_en').on('click', function (){
             i18n.setLng('en', function(){
                 $('.i18container').i18n();
-                // $('#i18_title').i18n();
+                $('#i18_title').i18n();
                 $('#i18_navbar').i18n();
                 $('#i18_about_me').i18n();
                 $('#i18_skills').i18n();
@@ -530,14 +530,14 @@ permalink: /
                 $('#i18_career').i18n();
                 $('#i18_blog').i18n();
                 $('#i18_link').i18n();
-                // $('.set_en').addClass('active');
-                // $('.set_cn').removeClass('active');
+                $('.set_en').addClass('active');
+                $('.set_pt').removeClass('active');
             });
         });
-        $('.set_cn').on('click', function (){
-            i18n.setLng('cn', function(){
+        $('.set_pt').on('click', function (){
+            i18n.setLng('pt_BR', function(){
                 $('.i18container').i18n();
-                // $('#i18_title').i18n();
+                $('#i18_title').i18n();
                 $('#i18_navbar').i18n();
                 $('#i18_about_me').i18n();
                 $('#i18_skills').i18n();
@@ -545,8 +545,8 @@ permalink: /
                 $('#i18_career').i18n();
                 $('#i18_blog').i18n();
                 $('#i18_link').i18n();
-                // $('.set_cn').addClass('active');
-                // $('.set_en').removeClass('active');
+                $('.set_pt').addClass('active');
+                $('.set_en').removeClass('active');
             });
         });
     });
